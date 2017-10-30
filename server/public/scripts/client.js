@@ -5,11 +5,11 @@ myApp.controller('GalleryController', function () {
     var gallery = this;
     var pictures = [
         { id: 1, image: 'assets/meandal.jpg', activity: 'in the studio with a personal hero, Alan Sparhawk of Low', show: false, coolCount:0, clickCount:0, viewCount:0, message:''},
-        { id: 2, image: 'assets/gaymarriagezooanimal.jpg', activity: 'Love Wins, celebrating gay marriage rights, largest show ever played 7k people', show: false, coolCount: 0, clickCount: 0, viewCount: 0, message: ''},
+        { id: 2, image: 'assets/gaymarriagezooanimal.jpg', activity: 'Love Wins, celebrating gay marriage rights, 7000 people attended', show: false, coolCount: 0, clickCount: 0, viewCount: 0, message: ''},
         { id: 3, image: 'assets/meandscott.jpg', activity: 'learned a lot from Scott Seekins about being an artist in my mid-twenties', show: false, coolCount: 0, clickCount: 0, viewCount: 0, message: ''},
-        { id: 4, image: 'assets/nickandeddie.jpg', activity: 'the back bar at nick and eddie was my muse, the most receptive audience ever', show: false, coolCount: 0, clickCount: 0, viewCount: 0, message: ''},
+        { id: 4, image: 'assets/nickandeddie.jpg', activity: 'the back bar at nick and eddie was my muse, the most receptive audiences ever, could be as weird as I wanted', show: false, coolCount: 0, clickCount: 0, viewCount: 0, message: ''},
         { id: 5, image: 'assets/producing.jpg', activity: 'first time producing someone else\'s record, learned alot', show: false, coolCount: 0, clickCount: 0, viewCount: 0, message: ''},
-        { id: 6, image: 'assets/wiseblood.jpg', activity: 'other than starting prime, playing sabbath lily at a walker art center production at the soap factory was the most I pushed my limits.', show: false, coolCount: 0, clickCount: 0, viewCount: 0, message: ''},
+        { id: 6, image: 'assets/wiseblood.jpg', activity: 'other than starting prime, playing sabbath lily from "wise blood" at a walker art center production at the soap factory was the most I pushed my limits.', show: false, coolCount: 0, clickCount: 0, viewCount: 0, message: ''},
 ]
 
     gallery.pictures = pictures;

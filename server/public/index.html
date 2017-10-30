@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My Life Gallery</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="vendors/angular.min.js"></script>
+        <script src = "scripts/client.js"></script>
+    </head>
+    <body ng-app="myApp">
+         <div ng-controller="GalleryController as gc">
+            <h1 align="center">My Life Through Music</h1>
+            <div class="maindivs" ng-repeat="picture in gc.pictures track by $index">
+                <div ng-click="gc.imageClick(picture)" ng-style="{'background-image':'url({{picture.image}})', 'background-repeat':'no-repeat', 'background-size':'contain', 'background-position':'center', 'height':'275px', 'width':'auto'}">
+                    <p ng-show="picture.show" class=description>{{picture.activity}}</p>
+                </div>
+                <div class="picturefooter">
+                <span>cool, eh?  </span>
+                <button ng-click="gc.coolCounter(picture)">Yah!</button>
+                <span class="coolcounter">{{picture.message}}</span>
+                <br>
+                <span>viewed: {{picture.viewCount}}</span>
+                </div>
+                <br>
+                <input id="picture.id" placeholder="comment" type="text">
+                <input type="text" placeholder="who are you?">
+                <button ng-click="gc.submitClick()">Submit</button>
+                <p></p>
+            </div>
+        <div>
+        </body>
+    </body>
+</html>

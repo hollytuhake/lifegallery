@@ -11,11 +11,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json()); // for parsing application/json
 app.use(express.static('server/public'));
 
-// point to router
-var router = require('./routes/route.js');
-app.use('/route', router);
-
-
 // determine port to use
 app.listen(port, function () {
     console.log('listening on port', port);
